@@ -32,26 +32,22 @@ const carousel_pics = ref(
           <RouterLink to="/table" class="custom-link">关于尘芯</RouterLink>
           <RouterLink to="/table" class="custom-link">联系我们</RouterLink>
         </el-col>
-
       </el-row>
     </el-header>
+
     <el-main>
-      <el-row>
-        <el-col :span="24">
-          <el-carousel height="1100px">
-            <el-carousel-item v-for="item in carousel_pics" :key="item">
-              <el-image :src="item" />
-            </el-carousel-item>
-          </el-carousel>
-        </el-col>
-      </el-row>
+      <RouterView />
     </el-main>
+
     <el-footer>Footer</el-footer>
   </el-container>
 
 </template>
 
 <style scoped>
+.el-main {
+  padding: 0
+}
 .custom-link {
   padding: 0px 5px;
   /* 上下0px，左右20px */
@@ -65,26 +61,11 @@ const carousel_pics = ref(
 
 .el-footer {
   height: 200px;
-  background-color: #EBEEF580
+  background-color: #393a3b80
 }
 
 .demonstration {
   color: var(--el-text-color-secondary);
 }
 
-.el-carousel__item h3 {
-  color: #475669;
-  opacity: 0.75;
-  line-height: 150px;
-  margin: 0;
-  text-align: center;
-}
-
-.el-carousel__item:nth-child(2n) {
-  background-color: #99a9bf;
-}
-
-.el-carousel__item:nth-child(2n + 1) {
-  background-color: #d3dce6;
-}
 </style>
