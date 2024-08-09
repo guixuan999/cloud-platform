@@ -21,7 +21,7 @@ const carousel_pics = ref(
     <el-header class="header">
       <el-row justify="space-between" style="padding: 20px 0">
         <el-col :span="12">
-          <el-image :src="micmote_logo" style="height: 30px" />
+          <el-image :src="micmote_logo" style="height: 18px" />
         </el-col>
         <el-col :span="12">
           <RouterLink to="/" class="custom-link">首页</RouterLink>
@@ -52,10 +52,11 @@ const carousel_pics = ref(
   padding: 0px 5px;
   /* 上下0px，左右20px */
   text-decoration: none;
+  font-size: 15px;
 }
 
 .el-header {
-  height: 80px;
+  height: 56px;
   background-color: #EBEEF580
 }
 

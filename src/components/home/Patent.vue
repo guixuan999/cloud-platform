@@ -32,35 +32,35 @@ const patent_pics = ref(
 </script>
 
 <template>
-    <div style="background-color: #f4f4f5; margin-top: 50px;padding-bottom: 50px;">
+    <div style="background-color: #f4f4f5; margin-top: 40px;padding-bottom: 15px;">
         <el-row justify="center">
             <el-text class="big-text">ADVANSED TECHNOLOGIES ｜专利技术</el-text>
         </el-row>
-        <el-row justify="center" class="column-row" style="height: 200px; padding: 0 500px">
-            <el-col :span="3">
-                <div style="font-size: 120px; color: #409EFF">12<label style="font-size: 25px; color: black">项</label>
+        <el-row justify="center" class="column-row" style="height: 100px; padding: 0 300px">
+            <el-col :span="6">
+                <div style="font-size: 6em; color: #409EFF">12<label style="font-size: 1rem; color: black">项</label>
                 </div>
-                <div style="font-size: 25px">发明专利</div>
+                <div style="font-size: 1em">发明专利</div>
             </el-col>
-            <el-col :span="3">
-                <div style="font-size: 120px; color: #409EFF">20<label style="font-size: 25px; color: black">项</label>
+            <el-col :span="6">
+                <div style="font-size: 6em; color: #409EFF">20<label style="font-size: 1rem; color: black">项</label>
                 </div>
-                <div style="font-size: 25px">软件著作</div>
+                <div style="font-size: 1em">软件著作</div>
             </el-col>
-            <el-col :span="3">
-                <div style="font-size: 120px; color: #409EFF">9<label style="font-size: 25px; color: black">个</label>
+            <el-col :span="6">
+                <div style="font-size: 6em; color: #409EFF">9<label style="font-size: 1rem; color: black">个</label>
                 </div>
-                <div style="font-size: 25px">硬件产品</div>
+                <div style="font-size: 1em">硬件产品</div>
             </el-col>
         </el-row>
-        <div style="background-color: #d9ecff80; margin: 50px 500px; ">
-            <el-row justify="center" class="column-row" style="height: 200px;">
-                <el-image style="height: 30px" :src="imageSrc" fit="cover" alt="Example Image" />
+        <div style="background-color: #d9ecff80; margin: 50px 200px; ">
+            <el-row justify="center" class="column-row" style="height: 100px;">
+                <el-image style="height: 20px" :src="imageSrc" fit="cover" alt="Example Image" />
             </el-row>
-            <el-row justify="center" style="height: 200px">
+            <el-row justify="center" style="height: 55%">
                 <el-col :span="2" class="column-layout" v-for="{ url, text } in patent_pics" :key="url">
-                    <el-image style="height: 80px" :src="url" fit="cover" alt="Example Image" />
-                    <el-text style="font-size: 20px">{{ text }}</el-text>
+                    <el-image style="height: 50px" :src="url" fit="cover" alt="Example Image" />
+                    <el-text style="font-size: 0.9em">{{ text }}</el-text>
                 </el-col>
             </el-row>
         </div>
@@ -98,7 +98,7 @@ const patent_pics = ref(
 }
 
 .el-text.big-text {
-    font-size: 2.5em;
+    font-size: 1.5em;
     padding: 50px
 }
 

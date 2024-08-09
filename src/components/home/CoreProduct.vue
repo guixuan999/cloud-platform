@@ -14,7 +14,7 @@ const productz_pics = ref(
         <el-text class="big-text">CORE PRODUCTS | 核心产品</el-text>
     </el-row>
     <el-row justify="center">
-        <el-col :span="5" class="image-container centered-col" v-for="item in productz_pics" :key="item">
+        <el-col :span="6" class="image-container centered-col" v-for="item in productz_pics" :key="item">
 
             <el-image class="image" :src="item" fit="cover" alt="Example Image" />
             <el-button class="overlay-button" type="primary" size="large">点击查看</el-button>
@@ -26,7 +26,7 @@ const productz_pics = ref(
 
 <style scoped>
 .image {
-    height: 300px
+    max-width: 100%; height: auto;
 }
 
 .big-text {
@@ -34,25 +34,25 @@ const productz_pics = ref(
 }
 
 .el-text.big-text {
-    font-size: 2.5em;
+    font-size: 1.5em;
     padding: 50px
 }
 
 .image-container {
     position: relative;
     display: inline-block;
-    padding: 0 10px
+    padding: 0 0
 }
 
 .overlay-button {
     position: absolute;
-    bottom: 80px;
+    bottom: 25%;
     /* 按钮距离底部的距离 */
-    left: 30px;
+    left: 7%;
     /* 按钮距离左侧的距离 */
     /* 其他按钮样式 */
-    height: 60px;
-    font-size: 22px;
+    height: 20%;
+    font-size: 15px;
 }
 
 .centered-col {

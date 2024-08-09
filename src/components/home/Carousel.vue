@@ -14,7 +14,7 @@ const carousel_pics = ref(
 <template>
     <el-row>
         <el-col :span="24">
-            <el-carousel height="1100px">
+            <el-carousel height="700px">
                 <el-carousel-item v-for="item in carousel_pics" :key="item">
                     <el-image :src="item" />
                 </el-carousel-item>
