@@ -27,3 +27,9 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Preview Production
+
+```sh
+npx vite preview
+```
