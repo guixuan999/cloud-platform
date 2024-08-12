@@ -1,7 +1,9 @@
 <script setup>
-import marketing_pic from "../../assets/mak.png"
+//import marketing_pic from "../../assets/mak.png"
 
 import { reactive, ref} from 'vue'
+
+const marketing_pic = ref(new URL('@/assets/mak.png', import.meta.url).href)
 
 const business = reactive(
     [
@@ -30,21 +32,21 @@ const business = reactive(
 let active_index = ref(0);
 
 function onMouseOver(index) {
-    this.active_index = index;
+    active_index.value = index;
 }
 
 function calSpan(index) {
-    if(this.active_index == index) return 5;
+    if(active_index.value == index) return 5;
     return 4;
 }
 
 var calStyle = function(index) {
-    if(this.active_index == index) return "background-color: #55607e";
+    if(active_index.value == index) return "background-color: #55607e";
     return '';
 }
 
 var calOpacity = function(index) {
-    if(this.active_index == index) return "opacity: 1";
+    if(active_index.value == index) return "opacity: 1";
     return 'opacity: 0.3';
     //return "opacity: 0.5"
 }
