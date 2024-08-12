@@ -1,9 +1,9 @@
 <script setup>
 
 import { reactive, ref} from 'vue'
-//import marketing_pic from "../../assets/mak.png"
+//import marketing_pic from "../../assets/mak.jpg"
 
-const marketing_pic = ref(new URL('@/assets/mak.png', import.meta.url).href)
+const marketing_pic = ref(new URL('@/assets/mak.jpg', import.meta.url).href)
 
 const business = reactive(
     [
