@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 import micmote_log2 from "./assets/micmote.png"
 import phone from "./assets/phone.png"
 import wechat from "./assets/wechat.png"
