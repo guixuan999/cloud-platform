@@ -29,13 +29,9 @@ const productz_pics = ref(
     max-width: 100%; height: auto;
 }
 
-.big-text {
-    font-size: 10px
-}
-
 .el-text.big-text {
     font-size: 1.5em;
-    padding: 50px
+    padding: 2em
 }
 
 .image-container {
@@ -52,13 +48,13 @@ const productz_pics = ref(
     /* 按钮距离左侧的距离 */
     /* 其他按钮样式 */
     height: 20%;
-    font-size: 15px;
+    font-size: 1em;
 }
 
 .centered-col {
   display: flex; /* 启用 Flexbox 布局 */
   justify-content: center; /* 水平居中对齐 */
-  margin: 0 10px
+  margin: 0 0.625em
 }
 
 </style>
