@@ -89,41 +89,9 @@ const patent_pics = ref(
     text-align: center
 }
 
-.image {
-    height: 300px
-}
-
-.big-text {
-    font-size: 10px
-}
-
 .el-text.big-text {
     font-size: 1.5em;
     padding: 50px
 }
 
-.image-container {
-    position: relative;
-    display: inline-block;
-    padding: 0 10px
-}
-
-.overlay-button {
-    position: absolute;
-    bottom: 80px;
-    /* 按钮距离底部的距离 */
-    left: 30px;
-    /* 按钮距离左侧的距离 */
-    /* 其他按钮样式 */
-    height: 60px;
-    font-size: 22px;
-}
-
-.centered-col {
-    display: flex;
-    /* 启用 Flexbox 布局 */
-    justify-content: center;
-    /* 水平居中对齐 */
-    margin: 0 10px
-}
 </style>
