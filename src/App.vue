@@ -11,14 +11,6 @@ import router from "@/router"
 // import router from "./router/index.js"
 
 const micmote_logo = ref(new URL('@/assets/logo.png', import.meta.url).href);
-const carousel_pics = ref(
-  [
-    new URL('@/assets/首页1.jpg', import.meta.url).href,
-    new URL('@/assets/核心技术.jpg', import.meta.url).href,
-    new URL('@/assets/核心产品.jpg', import.meta.url).href,
-    new URL('@/assets/核心技术.jpg', import.meta.url).href
-  ]
-)
 
 function clickme() {
   router.push('about')
@@ -29,10 +21,10 @@ function clickme() {
 <template>
 
   <el-container>
-    <el-header class="header">
-      <el-row justify="space-between" style="padding: 20px 0">
+    <el-header>
+      <el-row justify="space-between" style="padding: 1.25em 0">
         <el-col :span="12">
-          <el-image :src="micmote_logo" style="height: 18px" />
+          <el-image :src="micmote_logo" style="height: 1.125em" />
         </el-col>
         <el-col :span="12">
           <RouterLink to="/" class="custom-link">首页</RouterLink>
@@ -57,7 +49,8 @@ function clickme() {
         </el-row>
         <el-row>
           <el-col :span="6">
-            <h1 @click="clickme" style="cursor: pointer">行业解决方案<i style="font-size: 0.8em; color: #999999">  click me</i></h1>
+            <h1 @click="clickme" style="cursor: pointer">行业解决方案<i style="font-size: 0.8em; color: #999999"> click me</i>
+            </h1>
             <p>无线电子雷管</p>
             <p>智能化养殖</p>
           </el-col>
@@ -86,7 +79,7 @@ function clickme() {
           </el-col>
           <el-col :span="6" :offset="12" style="display: flex; justify-content: flex-end">
             <el-image :src="phone" />
-            <el-image :src="wechat" style="padding: 0 10px"/>
+            <el-image :src="wechat" style="padding: 0 0.625em" />
             <el-image :src="email" />
           </el-col>
         </el-row>
@@ -101,21 +94,25 @@ function clickme() {
   padding: 0
 }
 
-.custom-link.router-link-active {  
-  color: blue;  
+.custom-link.router-link-active {
+  color: blue;
 }
 
 .custom-link {
-  padding: 0px 5px;
+  padding: 0px 0.3125em;
   /* 上下0px，左右20px */
   text-decoration: none;
-  font-size: 15px;
   color: black;
 }
 
 .el-header {
-  height: 56px;
-  background-color: #EBEEF580
+  background-color: #EBEEF5F0;
+  height: 3.5em;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 .el-footer {
@@ -123,7 +120,7 @@ function clickme() {
   width: 100%;
   background-color: black;
   color: white;
-  padding: 30px 0
+  padding: 2em 0
 }
 
 .demonstration {
@@ -138,7 +135,8 @@ p {
   font-size: 0.9em;
   color: #BBBBBB
 }
+
 .el-divider {
-  margin: 10px 0
+  margin: 0.623em 0
 }
 </style>
