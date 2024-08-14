@@ -32,7 +32,7 @@ const patent_pics = ref(
 </script>
 
 <template>
-    <div style="background-color: #f4f4f5; margin-top: 40px;padding-bottom: 15px;">
+    <div style="background-image: linear-gradient(to top, #B4B4A5, #fff); margin-top: 40px;padding-bottom: 15px;">
         <el-row justify="center">
             <el-text class="big-text">ADVANSED TECHNOLOGIES ｜专利技术</el-text>
         </el-row>

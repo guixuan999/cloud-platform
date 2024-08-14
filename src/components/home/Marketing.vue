@@ -56,7 +56,7 @@ var calOpacity = function(index) {
         <el-image :src="marketing_pic"></el-image>
         <div class="overlap">
             <p>MARKETING | 业务⽅向</p>
-            <p style="text-align: center; font-size: 0.5em;">高适应性，多行业通用</p>
+            <p style="text-align: center; font-size: 0.6em;">高适应性，多行业通用</p>
         </div>    
     </el-row>
     <el-row justify="center" style="height: 360px; background-color: #35405e;">
@@ -77,10 +77,10 @@ div p {
 }
 
 .overlap {
-    position: absolute; top: 20%; left: 50%;
+    position: absolute; top: 10%; left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .overlap1 {

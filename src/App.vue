@@ -105,6 +105,11 @@ function clickme() {
   color: black;
 }
 
+/* The following might not be necessory, cause user agent style sheet for <a> has cursor: pointer  */
+.custom-link:hover {
+  cursor: pointer
+}
+
 .el-header {
   background-color: #EBEEF5F0;
   height: 3.5em;
