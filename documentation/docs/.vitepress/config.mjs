@@ -5,6 +5,7 @@ export default defineConfig({
   title: "Micmote Documentation",
   description: "Online Document",
   base: "/document/",
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
