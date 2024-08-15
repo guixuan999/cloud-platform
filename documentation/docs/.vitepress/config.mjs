@@ -9,6 +9,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
+    siteTitle: "Site Title", // override title in site configuration(see above), this will display in top navigation bar.
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
