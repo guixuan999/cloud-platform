@@ -86,3 +86,5 @@ Check out the documentation for the [full list of markdown extensions](https://v
 
 ![beauty](./assets/image/beauty.jpeg):tada: :100::smiley:
 [[toc]]
+
+[UCM2000 系列- 规格书V0.6.pdf](/pdf/UCM200%20系列-%20规格书V0.6.pdf)
