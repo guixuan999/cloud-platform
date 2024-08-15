@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "Micmote Documentation"
+  name: "Micmote"
   text: "Online Document"
   tagline: My great project tagline
   actions:
