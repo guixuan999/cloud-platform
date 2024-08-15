@@ -33,3 +33,25 @@ npm run build
 ```sh
 npx vite preview
 ```
+
+# Documentation (a SSG project created by VitePress)
+## Compile and Hot-Reload for Development
+
+```sh
+cd documentation
+npm run docs:dev
+```
+
+## Compile and Minify for Production
+
+```sh
+cd documentation
+npm run docs:build
+```
+
+## Preview Production
+
+```sh
+cd documentation
+npm run docs:preview
+```
