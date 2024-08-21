@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 import micmote_log2 from "./assets/micmote.png"
 import phone from "./assets/phone.png"
@@ -13,8 +13,12 @@ import router from "@/router"
 const micmote_logo = ref(new URL('@/assets/logo.png', import.meta.url).href);
 
 function clickme() {
-  router.push('about')
+  router.push('/')
 }
+
+onMounted(() => {
+  clickme()
+})
 
 </script>
 
